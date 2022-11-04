@@ -1,0 +1,85 @@
+/* hack to see all the boxes on the page to better work front end */
+/* * {
+  border: 1px solid black;
+} */
+body {
+  background-color: #98A8F8;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+}
+
+.results {
+  padding: 10px;
+}
+.bgc-results {
+  background-color: #CDFCF6;
+}
+.bgc-inner {
+  background-color: #BCCEF8;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.bgc-dark {
+  background-color: #98A8F8;
+}
+.half-div {
+  width: 70%;
+}
+.error {
+  text-align: center;
+}
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 45%;;
+  width: 100px;
+}
+
+/* From here down is CSS off of W3Schools for an accordion */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #98A8F8;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 25px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #FAF7F0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #CDFCF6;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #98A8F8;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
