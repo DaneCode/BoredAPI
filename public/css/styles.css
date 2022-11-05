@@ -3,11 +3,12 @@
   border: 1px solid black;
 } */
 body {
-  background-color: #98A8F8;
+  background-color: #1a535c;
 }
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4rem;
 }
 
 p {
@@ -22,10 +23,10 @@ input {
   padding: 10px;
 }
 .bgc-results {
-  background-color: #CDFCF6;
+  background-color: #f7fff7;
 }
 .bgc-inner {
-  background-color: #BCCEF8;
+  background-color: #4ecdc4;
   padding-bottom: 10px;
   margin-top: 20px;
 }
@@ -37,6 +38,7 @@ input {
 }
 .error {
   text-align: center;
+  color: #ff6b6b;
 }
 .btn {
   margin-top: 10px;
@@ -48,7 +50,7 @@ input {
 /* From here down is CSS off of W3Schools for an accordion */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #98A8F8;
+  background-color: #f7fff7;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -62,20 +64,20 @@ input {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #FAF7F0;
+  background-color: #ffe66d;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: #CDFCF6;
+  background-color: #f7fff7;
   display: none;
   overflow: hidden;
 }
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #98A8F8;
+  color: #000000;
   float: right;
   margin-left: 5px;
 }
