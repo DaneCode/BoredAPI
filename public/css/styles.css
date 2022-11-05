@@ -39,6 +39,8 @@ input {
 .error {
   text-align: center;
   color: #ff6b6b;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .btn {
   margin-top: 10px;
