@@ -34,7 +34,7 @@ app.post("/", (req, res) => {
     accessibilityRangeMin: req.body.accessibilityRangeMin / 100,
     accessibilityRangeMax: req.body.accessibilityRangeMax / 100
   }
-  //Folloging two statements check to see if price min and max were swapped, if they were it will automatically correct to try and avoid an error
+  //Following two statements check to see if price min and max were swapped, if they were it will automatically correct to try and avoid an error
   if (activity.priceRangeMin > activity.priceRangeMax) {
     [activity.priceRangeMin, activity.priceRangeMax] = [activity.priceRangeMax, activity.priceRangeMin]
   }

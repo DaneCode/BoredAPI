@@ -24,7 +24,7 @@
           <div class="form-row">
             <div class="container col-lg-4">
               <label for="inputService">Category:</label>
-              <select id="inputService" name="categoryName" class="form-control">
+              <select id="inputService" name="categoryName" class="form-control shadow">
                 <option selected>Choose...</option>
                 <option>busywork</option>
                 <option>charity</option>
@@ -39,32 +39,32 @@
             </div>
             <div class="container col-lg-4">
               <label class="inputText" for="participentInput">Number of Participents: </label>
-              <input class="form-control form-control-lg" id="participentInput" value="1" type="number" name="participentNumber">
+              <input class="form-control form-control-lg shadow" id="participentInput" value="1" type="number" name="participentNumber">
             </div>
           </div>
           <div class="form-row">
             <div class="container col-lg-4">
               <label for="priceRangeMin" class="form-label">Relative Price: Min</label>
-              <input class="form-control form-control-lg" value="0" type="text" id="priceRangeMin" name="priceRangeMin" placeholder="0">
+              <input class="form-control form-control-lg shadow" value="0" type="text" id="priceRangeMin" name="priceRangeMin" placeholder="0">
             </div>
             <div class="container col-lg-4">
               <label for="priceRangeMax" class="form-label">Max:</label>
-              <input class="form-control form-control-lg" value="100" type="text" id="priceRangeMax" name="priceRangeMax" placeholder="100">
+              <input class="form-control form-control-lg shadow" value="100" type="text" id="priceRangeMax" name="priceRangeMax" placeholder="100">
             </div>
           </div>
 
           <div class="form-row">
             <div class="container col-lg-4">
               <label for="accessibilityRange" class="form-label">Difficulty: Min</label>
-              <input class="form-control form-control-lg" value="0" type="text" id="accessibilityRangeMin" name="accessibilityRangeMin" placeholder="0">
+              <input class="form-control form-control-lg shadow" value="0" type="text" id="accessibilityRangeMin" name="accessibilityRangeMin" placeholder="0">
             </div>
             <div class="container col-lg-4">
               <label for="accessibilityRangeMax" class="form-label">Difficulty: Max</label>
-              <input class="form-control form-control-lg" value="100" type="text" id="accessibilityRangeMax" name="accessibilityRangeMax" placeholder="100">
+              <input class="form-control form-control-lg shadow" value="100" type="text" id="accessibilityRangeMax" name="accessibilityRangeMax" placeholder="100">
             </div>
           </div>
           <div class="">
-            <button class="btn btn-dark" type="submit">Go</button>
+            <button class="btn btn-dark shadow" type="submit">Go</button>
             <p class="error"><%=error%></p>
           </div>
         </form>
@@ -73,12 +73,12 @@
     <!-- Container to display returned results -->
     <div class="container justify-content-center bgc-inner">
       <% if (activities.length > 0) {%>
-      <div class="row bgc-results">
+      <div class="row bgc-results radius10top">
         <div class="col">
           <h2 class="results">Description: <%=activities[0].description%></h2>
         </div>
       </div>
-      <div class="row bgc-results">
+      <div class="row bgc-results ">
         <div class="col">
           <p class="results">Type: <%=activities[0].type%></p>
         </div>
@@ -94,7 +94,7 @@
           <p class="results">Accessibility: <%=activities[0].accessibility%></p>
         </div>
       </div>
-      <div class="row bgc-results">
+      <div class="row bgc-results radius10bottom">
         <div class="col">
           <p class="results">URL: <a href="<%=activities[0].link%>"><%=activities[0].link%></a></p>
         </div>
@@ -105,8 +105,8 @@
     <div class="row justify-content-center bgc-inner">
       <div class="container">
         <% activities.forEach((activity) => {%>
-        <button class="accordion"><%=activity.description%></button>
-        <div class="panel">
+        <button class="accordion radius10"><%=activity.description%></button>
+        <div class="panel radius10">
           <div class="row">
             <div class="col">
               <p>Type: <%=activity.type%></p>
@@ -125,7 +125,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Link: <%=activity.Link%></p>
+              <p>URL: <a href="<%=activity.link%>"><%=activity.link%></a></p>
             </div>
           </div>
         </div>
